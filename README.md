@@ -7,9 +7,9 @@
 ## Application Screenshots
 
 <p align="left">
-  <img src="images/image1.jpg" width="350">
+  <img src="images/image1.jpg" width="100">
 </p>
 
 <p align="left">
-  <img src="images/image2.jpg" width="350">
+  <img src="images/image2.jpg" width="100">
 </p>
