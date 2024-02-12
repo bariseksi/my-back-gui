@@ -1,0 +1,23 @@
+﻿<Window x:Class="MyBack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyBack"
+        mc:Ignorable="d"
+        Background="#00FFFFFF"
+        Title="My Back" Height="130" Width="160" WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseDoubleClick="Window_MouseDoubleClick">
+    <Border CornerRadius="20" BorderBrush="#25686f" BorderThickness="0" Background="#25686f">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26"></RowDefinition>
+            <RowDefinition></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" x:Name="label_WarningLevel" Foreground="#99FFFFFF" VerticalAlignment="Top" HorizontalAlignment="Center" MouseLeftButtonDown="Label_WarningLevel_MouseLeftButtonDown">Warning Level : 70</Label>
+            <Label Grid.Row="1" x:Name="label_Angle" Foreground="#99FFFFFF" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="50">00</Label>
+            <Label Grid.Row="2" x:Name="label_Voltage" Foreground="#99FFFFFF" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="12" MouseLeftButtonDown="Label_Voltage_MouseLeftButtonDown">-</Label>
+            <Label Grid.Row="2" x:Name="label_BatteryPercentage"  Foreground="#99FFFFFF" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="12" MouseLeftButtonDown="Label_BatteryPercentage_MouseLeftButtonDown">0.0</Label>
+        </Grid>
+    </Border>
+</Window>
